@@ -31,6 +31,12 @@
             <version>${kotlin.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.jennifer.test</groupId>
+            <artifactId>test-open-resource</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -114,19 +120,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-
-            <!--            <plugin>-->
-            <!--                <groupId>io.github.phillipuniverse</groupId>-->
-            <!--                <artifactId>githook-maven-plugin</artifactId>-->
-            <!--                <version>1.0.0</version>-->
-            <!--                <executions>-->
-            <!--                    <execution>-->
-            <!--                        <goals>-->
-            <!--                            <goal>install</goal>-->
-            <!--                        </goals>-->
-            <!--                    </execution>-->
-            <!--                </executions>-->
-            <!--            </plugin>-->
 
             <plugin>
                 <!--                https://github.com/rudikershaw/git-build-hook-->

@@ -45,24 +45,43 @@ h3 {
 
 <ul>
 <li>
-number of kt files: 1
+number of kt files: 2
 </li>
 <li>
-number of packages: 1
+number of packages: 2
 </li>
 <li>
-number of classes: 0
+number of classes: 1
 </li>
 <li>
-number of functions: 1
+number of functions: 3
 </li>
 <li>
-number of properties: 0
+number of properties: 12
 </li>
 </ul>
 
 <h2>Findings</h2>
-
+<h3>style</h3>
+<div class="rule-container">
+<span class="rule">
+ForbiddenComment
+</span>
+<span class="description">
+Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:
+</span>
+</div>
+<ul>
+<li>
+<span class="location">
+/Users/jennifer.huang/Documents/practices/git-developer/githooktest/src/main/java/com/git/practice/MyApp.kt:9:1
+</span>
+<br />
+<span class="message">
+This comment contains text that has been defined as forbidden in detekt.
+</span>
+</li>
+</ul>
 
 </body>
 </html>
