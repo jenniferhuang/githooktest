@@ -122,7 +122,7 @@
             </plugin>
 
             <plugin>
-                <!--                https://github.com/rudikershaw/git-build-hook-->
+                <!--                https://github.com/rudikershaw/git-build-hook, mvn git-build-hook:install-->
                 <groupId>com.rudikershaw.gitbuildhook</groupId>
                 <artifactId>git-build-hook-maven-plugin</artifactId>
                 <version>2.0.2</version>
