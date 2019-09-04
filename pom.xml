@@ -128,7 +128,7 @@
                 <version>2.0.2</version>
                 <configuration>
                     <!-- The locations of a variety of different hooks to install in the local project. -->
-                    <preCommit>hooks/pre-commits.sh</preCommit>
+                    <preCommit>hooks/pre-commits</preCommit>
                 </configuration>
                 <executions>
                     <execution>
