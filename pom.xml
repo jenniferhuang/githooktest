@@ -121,6 +121,7 @@
                 </configuration>
             </plugin>
 
+
             <plugin>
                 <!--                https://github.com/rudikershaw/git-build-hook, mvn git-build-hook:install-->
                 <groupId>com.rudikershaw.gitbuildhook</groupId>
@@ -135,6 +136,28 @@
                         <goals>
                             <goal>install</goal>
                         </goals>
+                        <phase>generate-sources</phase>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <id>script-chmod</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>chmod</executable>
+                            <arguments>
+                                <argument>u+x</argument>
+                                <argument>.git/hooks/pre-commit</argument>
+                            </arguments>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
