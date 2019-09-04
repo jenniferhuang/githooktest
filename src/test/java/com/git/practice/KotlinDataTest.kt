@@ -10,7 +10,6 @@ import org.testng.annotations.Test
 class KotlinDataTest {
 
     @Test
-    //TODO: TO CAUSE  ForbiddenComment
     fun testMap() {
         var myMap: HashMap<String, String> = HashMap()
 
