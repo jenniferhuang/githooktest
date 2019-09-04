@@ -3,7 +3,7 @@
 echo "Running static analysis..."
 
 # Validate Kotlin code with detekt and KtLint before committing
-mvn detekt ktlintCheck --daemon
+mvn git-build-hook:install
 
 status=$?
 
