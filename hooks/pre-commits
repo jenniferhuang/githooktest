@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
-PATH="/usr/local/bin:$PATH"
 
 echo "Running static analysis..."
 
 # Validate Kotlin code with detekt and KtLint before committing
-mvn detekt:check@detekt-custom
-
+MVN_PATH="$(which mvn)"
+"${MVN_PATH}" detekt:check@detekt-custom
 
 status=$?
 

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo "Running static analysis..."
+
+
+MVN_PATH="$(which mvn)"
+"${MVN_PATH}" detekt:check@detekt-custom
