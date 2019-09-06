@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env bash
+PATH="/usr/local/bin:$PATH"
 
-export PATH=/usr/local/bin:$PATH
 echo "Running static analysis..."
 
 # Validate Kotlin code with detekt and KtLint before committing
