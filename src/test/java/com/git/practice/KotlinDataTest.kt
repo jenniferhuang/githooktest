@@ -12,7 +12,7 @@ class KotlinDataTest {
     @Test
     //TODO: TO CAUSE  ForbiddenComment-udpate-update-update-test
     //jennifer branch update
-    //master branch , test merge/rebase
+    //master branch , test merge/rebase, master continue.
     fun testMap() {
         var myMap: HashMap<String, String> = HashMap()
 
